@@ -1,0 +1,120 @@
+/**  Basic Page CSS **/
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Rubik', sans-serif;
+  color: #555;
+}
+
+.navbar a {
+  font-weight: 600;
+  font-family: 'Rubik', sans-serif;
+  color: #555;
+}
+
+footer {
+  font-size: 0.8em;
+}
+
+.btn-primary {
+  font-size: 0.8rem;
+  background-color: #f5a20b !important;
+  border: inherit;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Rubik',sans-serif;
+  letter-spacing: 0.05rem;
+}
+
+.btn-primary:hover {
+  background-color: #dc930d;
+}
+
+.add-appointment .card-body {
+  display: none;
+}
+
+.apt-addheading {
+  cursor: pointer;
+  user-select: none;
+}
+
+.appointment-list {
+  font-size: 0.825rem;
+}
+
+/* .appointment-list .pet-item {
+  border-bottom: 1px dotted gray;
+} */
+
+.appointment-list .pet-item:last-child {
+  border-bottom: none;
+}
+
+.appointment-list .pet-name {
+  font-weight: 600;
+  color: #555;
+  font-size: 1rem;
+  line-height: 100%;
+  font-family: 'Rubik', sans-serif;
+}
+
+.appointment-list .label-item {
+  color: #555;
+  line-height: 2rem;
+}
+
+.appointment-list .label-item1 {
+  color: #808080;
+  line-height: 2rem;
+}
+
+.appointment-list .apt-date {
+  font-style: italic;
+}
+
+.appointment-list .apt-notes {
+  line-height: 120%;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #a9aeb2;
+}
+
+.delete-btn {
+  color: #e8e8e8;
+}
+
+/* App Add */
+.card {
+  border: none;
+  background: #f8f9fa;
+}
+
+.form-control {
+  font-size: 0.9rem;
+  border: 1px solid #f3f3f3;
+}
+
+.input-group {
+  align-items: center;
+}
+
+.search-bar {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.search-icon {
+  position: absolute;
+  z-index: 1;
+  color: #dadada;
+}
+
+.input-group > .form-control:not(:first-child), .input-group > .custom-select:not(:first-child) {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}

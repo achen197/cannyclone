@@ -1,0 +1,31 @@
+<main class="page bg-white" id="petratings">
+  <div class="container-full">
+    <div class="row">
+      <div class="col-md-12 bg-white">
+
+        <div class="container mt-4">
+          <div class="row">
+            <div class="col-4">
+                <app-add (addEvt)="addApt($event)"></app-add>
+            </div>
+            <div class="col-8">
+                <app-search
+                (queryEvt)="searchApt($event)"
+                (orderEvt)="orderApt($event)"
+                [orderBy]="orderBy"
+                [orderType]="orderType"
+                ></app-search>
+
+                <app-list
+                [aptList]="modifiedList"
+                (deleteEvt)="deleteApt($event)"
+                (updateEvt)="updateApt($event)"
+              ></app-list>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- col-md-12 -->
+    </div><!-- row -->
+  </div><!-- container -->
+</main><!-- main -->
